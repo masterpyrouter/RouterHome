@@ -65,11 +65,24 @@ config srvhost
 	option class '0'
 	option weight '100'
 
-config domain
-	option name 'sufaceLAN'
-	option ip '192.168.10.120'
+config host
+	option name 'iPhone'
+	option dns '1'
+	option mac '42:89:05:89:7f:e1'
+	option ip '192.168.10.138'
+	option leasetime 'infinite'
 
-config domain
-	option name 'QTB450'
-	option ip '192.168.10.110'
+config host
+	option name 'RedmiK30'
+	option dns '1'
+	option mac 'a4:45:19:df:d7:46'
+	option ip '192.168.10.140'
+	option leasetime 'infinite'
+
+config host
+	option name 'PYfengshan'
+	option dns '1'
+	option mac 'f4:cf:a2:cc:f6:c1'
+	option ip '192.168.10.112'
+	option leasetime '12h'
 
