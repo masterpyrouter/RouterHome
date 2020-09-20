@@ -8,11 +8,11 @@ config samba
 
 config sambashare
 	option browseable 'yes'
-	option name '我的电影'
-	option path '/mnt/sdb2'
 	option users 'root'
 	option read_only 'no'
 	option guest_ok 'no'
 	option create_mask '0777'
 	option dir_mask '0777'
+	option path '/mnt/sdb1'
+	option name '我的共享'
 

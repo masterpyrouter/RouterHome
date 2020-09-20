@@ -14,12 +14,11 @@ config global
 	option netflix_proxy '0'
 	option udp_relay_server 'same'
 	option netflix_server 'same'
+	option adblock '0'
 	option global_server 'cfg0e4a8f'
 	option pdnsd_enable '1'
 	option tunnel_forward '8.8.4.4:53'
 	option run_mode 'gfw'
-	option adblock '1'
-	option adblock_url 'https://anti-ad.net/anti-ad-for-dnsmasq.conf'
 
 config access_control
 	option lan_ac_mode 'b'
@@ -29,8 +28,8 @@ config access_control
 	list wan_fw_ips '91.108.4.0/22'
 	list wan_fw_ips '91.108.56.0/22'
 	list wan_fw_ips '109.239.140.0/24'
-	list lan_bp_ips '192.168.8.108'
-	list lan_bp_ips '192.168.8.110'
+	list lan_fp_ips '192.168.10.110'
+	list lan_bp_ips '192.168.10.118'
 
 config socks5_proxy
 	option socks '0'
