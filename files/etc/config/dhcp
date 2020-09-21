@@ -16,6 +16,7 @@ config dnsmasq
 	option resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
 	option sequential_ip '1'
 	list server '127.0.0.1#5333'
+	option noresolv '0'
 
 config dhcp 'lan'
 	option interface 'lan'
@@ -58,13 +59,6 @@ config host
 	option ip '192.168.10.118'
 	option name 'SfacePro3wifi'
 
-config srvhost
-	option srv '_vlmcs._tcp'
-	option target 'HomeRouter'
-	option port '1688'
-	option class '0'
-	option weight '100'
-
 config host
 	option name 'iPhone'
 	option dns '1'
@@ -85,4 +79,11 @@ config host
 	option mac 'f4:cf:a2:cc:f6:c1'
 	option ip '192.168.10.112'
 	option leasetime '12h'
+
+config srvhost
+	option srv '_vlmcs._tcp'
+	option target 'RouterHome'
+	option port '1688'
+	option class '0'
+	option weight '100'
 
