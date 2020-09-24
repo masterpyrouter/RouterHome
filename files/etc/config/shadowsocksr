@@ -14,11 +14,11 @@ config global
 	option netflix_proxy '0'
 	option udp_relay_server 'same'
 	option netflix_server 'same'
-	option adblock '0'
 	option global_server 'cfg0e4a8f'
 	option pdnsd_enable '1'
 	option tunnel_forward '8.8.4.4:53'
 	option run_mode 'gfw'
+	option adblock '0'
 
 config access_control
 	option lan_ac_mode 'b'
@@ -63,8 +63,8 @@ config servers
 	option vmess_id 'b65742f6-0754-398d-b831-0052903efe36'
 	option server '01-hi.tw.v2life.club'
 	option switch_enable '1'
-	option alias '台湾 600M Hinet高速直连 流媒体解锁 低倍率 x0.9'
 	option ip '210.65.89.56'
+	option alias '台湾 600M Hinet 联通高速直连 流媒体解锁 低倍率 x0.9'
 
 config servers
 	option ws_host 'a.189.cn'
@@ -97,10 +97,10 @@ config servers
 	option alter_id '16'
 	option grouphashkey '6f778b5116948fc58436841c474682f9'
 	option vmess_id 'b65742f6-0754-398d-b831-0052903efe36'
-	option alias '香港 01-Tc-CN2-×0.9推荐日常使用-低倍率'
 	option server '01-hk.tc.ssrc.win'
 	option switch_enable '1'
 	option ip '119.28.86.214'
+	option alias '香港 01-Tc-CN2-×0.9 日常使用 低倍率  推荐电信'
 
 config servers
 	option ws_host 'a.189.cn'
@@ -171,10 +171,10 @@ config servers
 	option alter_id '2'
 	option grouphashkey '6f778b5116948fc58436841c474682f9'
 	option vmess_id 'b65742f6-0754-398d-b831-0052903efe36'
-	option alias '韩国 01-OR 双程CN2 日常使用 低倍率 x0.6'
 	option server '01-kr.or.ssrc.win'
 	option switch_enable '1'
 	option ip '193.122.102.4'
+	option alias '韩国 01-OR 双程CN2 日常使用 低倍率 x0.6  推荐电信'
 
 config servers
 	option ws_host 'a.189.cn'
@@ -189,10 +189,10 @@ config servers
 	option alter_id '2'
 	option grouphashkey '6f778b5116948fc58436841c474682f9'
 	option vmess_id 'b65742f6-0754-398d-b831-0052903efe36'
-	option alias '韩国 02-OR 双程CN2 日常使用 低倍率 x0.6'
 	option server '02-kr.or.ssrc.win'
 	option switch_enable '1'
 	option ip '140.238.20.59'
+	option alias '韩国 02-OR CN2 日常使用 低倍率 x0.6 推荐电信'
 
 config servers
 	option ws_host 'a.189.cn'
