@@ -15,8 +15,7 @@ config dnsmasq
 	option filter_aaaa '1'
 	option resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
 	option sequential_ip '1'
-	option noresolv '0'
-	list server '127.0.0.1#5333'
+	list server '127.0.0.1#5335'
 
 config dhcp 'lan'
 	option interface 'lan'
@@ -39,50 +38,36 @@ config odhcpd 'odhcpd'
 	option loglevel '4'
 
 config host
-	option name 'SfacePro3LAN'
+	option name 'QNAS'
 	option dns '1'
-	option mac '28:18:78:fe:56:b7'
-	option ip '192.168.10.120'
+	option mac '24:5e:be:2d:7e:d9'
+	option ip '192.168.8.108'
 	option leasetime 'infinite'
 
 config host
+	option name 'FWR110'
 	option dns '1'
+	option mac 'd4:83:04:cb:c8:7d'
+	option ip '192.168.8.110'
 	option leasetime 'infinite'
-	option mac '54:e1:ad:e6:52:0f'
-	option ip '192.168.10.110'
-	option name 'QTB450'
 
 config host
+	option name 'AC88U'
+	option dns '1'
+	option mac '18:31:bf:5c:04:a0'
+	option ip '192.168.8.120'
+	option leasetime 'infinite'
+
+config host
+	option name 'SfacePro3'
 	option dns '1'
 	option mac '4c:0b:be:04:f5:ac'
+	option ip '192.168.8.118'
 	option leasetime 'infinite'
-	option ip '192.168.10.118'
-	option name 'SfacePro3wifi'
-
-config host
-	option name 'iPhone'
-	option dns '1'
-	option mac '42:89:05:89:7f:e1'
-	option ip '192.168.10.138'
-	option leasetime 'infinite'
-
-config host
-	option name 'RedmiK30'
-	option dns '1'
-	option mac 'a4:45:19:df:d7:46'
-	option ip '192.168.10.140'
-	option leasetime 'infinite'
-
-config host
-	option name 'PYfengshan'
-	option dns '1'
-	option mac 'f4:cf:a2:cc:f6:c1'
-	option ip '192.168.10.112'
-	option leasetime '12h'
 
 config srvhost
 	option srv '_vlmcs._tcp'
-	option target 'RouterHome'
+	option target 'HomeRouter'
 	option port '1688'
 	option class '0'
 	option weight '100'

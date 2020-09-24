@@ -73,9 +73,6 @@ config upnpd
 config nlbwmon
 	option init 'nlbwmon'
 
-config transmission
-	option init 'transmission'
-
 config smartdns
 	option init 'smartdns'
 
